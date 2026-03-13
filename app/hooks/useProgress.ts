@@ -12,6 +12,10 @@ export interface Progress {
   attention: GameScore[];
   speed: GameScore[];
   reasoning: GameScore[];
+  nback: GameScore[];
+  stroop: GameScore[];
+  digitspan: GameScore[];
+  sequences: GameScore[];
 }
 
 const STORAGE_KEY = "cerebros_progress";
@@ -21,6 +25,10 @@ const DEFAULT_PROGRESS: Progress = {
   attention: [],
   speed: [],
   reasoning: [],
+  nback: [],
+  stroop: [],
+  digitspan: [],
+  sequences: [],
 };
 
 function loadProgress(): Progress {
