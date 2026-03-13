@@ -10,7 +10,7 @@ export default function Header() {
             Cérebros
           </span>
         </Link>
-        <nav className="flex items-center gap-1">
+        <nav className="flex flex-wrap items-center gap-1">
           <Link
             href="/games/memory"
             className="px-3 py-1.5 text-sm text-slate-300 hover:text-blue-400 hover:bg-slate-800 rounded-lg transition-all"
@@ -34,6 +34,30 @@ export default function Header() {
             className="px-3 py-1.5 text-sm text-slate-300 hover:text-purple-400 hover:bg-slate-800 rounded-lg transition-all"
           >
             Raisonnement
+          </Link>
+          <Link
+            href="/games/nback"
+            className="px-3 py-1.5 text-sm text-slate-300 hover:text-teal-400 hover:bg-slate-800 rounded-lg transition-all"
+          >
+            N-Back
+          </Link>
+          <Link
+            href="/games/stroop"
+            className="px-3 py-1.5 text-sm text-slate-300 hover:text-rose-400 hover:bg-slate-800 rounded-lg transition-all"
+          >
+            Stroop
+          </Link>
+          <Link
+            href="/games/digitspan"
+            className="px-3 py-1.5 text-sm text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all"
+          >
+            Empan
+          </Link>
+          <Link
+            href="/games/sequences"
+            className="px-3 py-1.5 text-sm text-slate-300 hover:text-emerald-400 hover:bg-slate-800 rounded-lg transition-all"
+          >
+            Séquences
           </Link>
         </nav>
       </div>

@@ -61,6 +61,62 @@ const GAMES = [
     benefit: "Entraîne le raisonnement",
     scoreLabel: "meilleur niveau",
   },
+  {
+    id: "nback" as const,
+    title: "N-Back",
+    description:
+      "Identifiez si la lettre actuelle correspond à celle vue N étapes avant. Entraînez votre mémoire de travail.",
+    icon: "🔤",
+    href: "/games/nback",
+    color: "bg-teal-500",
+    borderColor: "border-teal-800/50",
+    textColor: "text-teal-400",
+    bgColor: "bg-teal-950/20",
+    benefit: "Mémoire de travail",
+    scoreLabel: "meilleur score",
+  },
+  {
+    id: "stroop" as const,
+    title: "Stroop",
+    description:
+      "Ignorez le mot et nommez la couleur de l'encre. Entraînez votre flexibilité et inhibition cognitive.",
+    icon: "🎨",
+    href: "/games/stroop",
+    color: "bg-rose-500",
+    borderColor: "border-rose-800/50",
+    textColor: "text-rose-400",
+    bgColor: "bg-rose-950/20",
+    benefit: "Flexibilité cognitive",
+    scoreLabel: "meilleur score",
+  },
+  {
+    id: "digitspan" as const,
+    title: "Empan de Chiffres",
+    description:
+      "Mémorisez des séquences de chiffres de plus en plus longues. Testez votre empan mnésique.",
+    icon: "🔢",
+    href: "/games/digitspan",
+    color: "bg-orange-500",
+    borderColor: "border-orange-800/50",
+    textColor: "text-orange-400",
+    bgColor: "bg-orange-950/20",
+    benefit: "Mémoire numérique",
+    scoreLabel: "meilleur score",
+  },
+  {
+    id: "sequences" as const,
+    title: "Séquences",
+    description:
+      "Trouvez la règle et devinez le prochain nombre. Exercez votre raisonnement logique et mathématique.",
+    icon: "🔣",
+    href: "/games/sequences",
+    color: "bg-emerald-500",
+    borderColor: "border-emerald-800/50",
+    textColor: "text-emerald-400",
+    bgColor: "bg-emerald-950/20",
+    benefit: "Raisonnement logique",
+    scoreLabel: "meilleur score",
+  },
 ];
 
 export default function Home() {
@@ -102,8 +158,8 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-8 mt-8">
             {[
               { label: "Sessions jouées", value: totalSessions || "0" },
-              { label: "Jeux disponibles", value: "4" },
-              { label: "Fonctions cognitives", value: "5" },
+              { label: "Jeux disponibles", value: "8" },
+              { label: "Fonctions cognitives", value: "7" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl font-bold text-white">{stat.value}</div>
